@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagination Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="content">
+    <div class="table-responsive">
+      <h1 id="title">Pagination Task</h1>
+      <p id="description">This page contain list of people's names and their E-mail</p>
+      <table id="table" class="table table-bordered">
+
+      </table>
+    </div>
+
+    <div class="pagination">
+      <div id="buttons" class="d-flex justify-content-center">
+        <button class="button-btn" onclick="changePage(-currentPage + 1)">First</button>
+        <button class="button-btn" onclick="changePage(-1)">Previous</button>
+        <button class="button-btn" onclick="changePage(1)">Next</button>
+        <button class="button-btn" onclick="changePage(totalPages - currentPage)">Last</button>
+
+        <div class="page-info">
+          <span>Page <span id="currentPage">1</span> of <span id="totalPages">1</span></span>
+          <span>Total Items: <span id="totalItems">0</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+
+</body>
+
+</html>

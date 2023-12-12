@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FBF6EE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  transition: box-shadow .2s ease-in-out;
+  touch-action: manipulation;
+  
+}
+
+button:focus,
+button:hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-btn {
+  margin: 2.5rem;
+}
+
+span {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-style: italic;
+  padding: 20px 5px 5px 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  font-family: Georgia, 'Times New Roman', Times, sans-serif;
+  font-size: 50px;
+  font-style: italic;
+}
+
+#description {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+
+#content {
+  margin: 20px;
+  width: 450px;
+  height: 500px;
+  background-color: #65b749;
+  text-align: center;
+}
+
+.page {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.table-responsive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 1em;
+  background: #C1F2B0;
+  width: 175px;
+  border-bottom: 2px solid white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

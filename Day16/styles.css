@@ -34,11 +34,9 @@ section {
     border-radius: 50%;
     cursor: pointer;
 }
-#timer .countdown-wrapper #countdown #sec{
-    box-shadow: 0 0 0 5px rgb(237, 39, 211)
-}
+
 #timer .countdown-wrapper #countdown #sec:hover{
-    box-shadow: 0 0 0 5px rgb(237, 39, 237)
+    box-shadow: 0 0 0 5px rgb(39, 39, 237)
 }
 #timer #wishes-content{
     font-family: 'Dancing Script', cursive;

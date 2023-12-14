@@ -1,35 +1,37 @@
 let countdown = 10;
 var timer = document.getElementById('sec');
 timer.innerHTML = countdown--;
-setTimeout(() => {
-    timer.innerText = countdown--;
+
+function startCountdown(callback) {
     setTimeout(() => {
         timer.innerText = countdown--;
-        setTimeout(() => {
-            timer.innerText = countdown--;
-            setTimeout(() => {
-                timer.innerText = countdown--;
-                setTimeout(() => {
-                    timer.innerText = countdown--;
-                    setTimeout(() => {
-                        timer.innerText = countdown--;
-                        setTimeout(() => {
-                            timer.innerText = countdown--;
-                            setTimeout(() => {
-                                timer.innerText = countdown--;
-                                setTimeout(() => {
-                                    timer.innerText = countdown--;
-                                    setTimeout(() => {
-                                        timer.innerText = countdown--;
-                                        document.querySelector('.timer-content').style.display = 'none';
-                                        document.getElementById('wishes-content').style.display = 'block';
-                                    },1000)
-                                },1000)
-                            },1000)
-                        },1000)
-                    },1000)
-                },1000)
-            },1000)
-        },1000)
-    },1000)
-},1000);
+        callback();
+    }, 1000);
+}
+
+function endCountdown() {
+    document.querySelector('.timer-content').style.display = 'none';
+    document.getElementById('wishes-content').style.display = 'block';
+}
+
+startCountdown(() => {
+    startCountdown(() => {
+        startCountdown(() => {
+            startCountdown(() => {
+                startCountdown(() => {
+                    startCountdown(() => {
+                        startCountdown(() => {
+                            startCountdown(() => {
+                                startCountdown(() => {
+                                    startCountdown(() => {
+                                        endCountdown();
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    });
+});

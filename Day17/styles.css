@@ -1,0 +1,99 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #5cdb95;
+}
+
+
+h1{
+    font-size: 25px !important;
+    
+}
+
+.row{
+  padding: 10px;
+}
+
+
+
+.pad{
+padding: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+
+.card-img-top {
+  width: 325px;
+  height: 200px;
+  margin: 5px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.card-img-top {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.card-body,
+.card{
+background-color: #edf5e1;
+border-radius: 25px;
+
+}
+.card-header{
+  background-color: #05386b;
+  color: white;
+  border-radius: 25px 25px 0 0 !important;
+}
+
+.card-text{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.card-body{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.button {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  padding: 16px 24px;
+  text-align: center;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+

@@ -77,5 +77,5 @@ function changePage(offset) {
     .catch(error => console.error('Error fetching data:', error));
 }
 
-// Show the initial page
-changePage(0); // Fetch and display the first page on page load
+
+changePage(0); 

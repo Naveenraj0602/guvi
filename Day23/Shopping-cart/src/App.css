@@ -1,0 +1,144 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container-fluid {
+  background-color: white;
+  font-size: 1.2rem;
+  padding: 10px 75px !important;
+  margin-top: 0%;
+
+}
+
+#cart-btn {
+  padding: 5px;
+}
+
+/* Body */
+
+.description-part {
+  width: 100vw;
+  height: 350px;
+  margin-top: 50px;
+  background-color: rgb(35, 34, 34);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#description-heading {
+  font-size: 6rem;
+}
+
+
+/* card */
+
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+}
+
+
+
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: rgb(185, 177, 168);
+}
+
+.card {
+  width: 250px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  background-color: beige;
+}
+
+.card-img-top {
+  height: 280px;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+  margin-top: 10px;
+  background-color: rgb(226, 244, 243);
+
+}
+
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+.btn-product {
+  background-color: transparent;
+  border: 2px solid #1A1A1A !important;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  padding: 16px 24px;
+  text-align: center;
+
+
+  width: 100%;
+}
+
+
+
+.btn-product:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.btn-product:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+/* Footer */
+.footer {
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+}
+
+.container-fluid-footer {
+  background-color: rgb(35, 34, 34);
+  height: 70px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

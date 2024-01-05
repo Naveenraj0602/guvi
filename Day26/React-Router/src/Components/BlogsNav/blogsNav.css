@@ -1,0 +1,18 @@
+.blogs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogs-route{
+    font-weight: 600;
+}
+
+.blogs-route:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.navbar{
+    background-color: transparent;
+}

@@ -1,0 +1,19 @@
+body{
+  background-color: rgb(166, 196, 222);
+
+}
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(166, 196, 222);
+}
+
+.card {
+  padding: 2em;
+  width: 325px;
+  height: 325px;
+}
+
+

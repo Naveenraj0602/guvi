@@ -13,14 +13,14 @@ const Products = () => {
       author: '',
       description: '',
       isbn: '',
-      published: '', // New field for published date
+      published: '', 
     },
     validationSchema: Yup.object({
       title: Yup.string().required('Title is required'),
       author: Yup.string().required('Author is required'),
       description: Yup.string().required('Description is required'),
       isbn: Yup.string().required('ISBN is required'),
-      published: Yup.string().required('Published date is required'), // Validation for published date
+      published: Yup.string().required('Published date is required'), 
     }),
     onSubmit: (values, { resetForm }) => {
       const newBook = { ...values };
@@ -101,7 +101,6 @@ const Products = () => {
               ) : null}
             </div>
             <div>
-              {/* New input for published date */}
               <input
                 type="text"
                 placeholder="Published Date"

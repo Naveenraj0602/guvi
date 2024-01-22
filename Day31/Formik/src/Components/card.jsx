@@ -32,7 +32,7 @@ function Cards({ book, onUpdate, onDelete }) {
               </small>
               
             </p>
-            {/* Add more fields as needed */}
+            
             <div>
               <button
                 className="btn btn-primary me-2"

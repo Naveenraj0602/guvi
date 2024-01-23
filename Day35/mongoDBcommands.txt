@@ -1,0 +1,50 @@
+Mongo DB Day1 Task
+
+Initially I have created a database named guviDay31Task and created a collection named products and added the given array of data.
+Here below products refers to a collection.
+
+1. Find all the information about each products
+Answer: db.products.find()
+
+2. Find the product price which are between 400 to 800
+Answer: db.products.find({product_price: {$gt: 400, $lt: 800}})
+
+3. Find the product price which are not between 400 to 600
+Answer: db.products.find({product_price: {$not: {$gt: 400, $lt: 600}}})
+
+4. List the four product which are grater than 500 in price
+Answer: db.products.find({product_price: {$gt: 500}})
+
+5. Find the product name and product material of each products
+Answer: db.products.find({}, {product_name: 1, product_price: 1, _id:0})
+
+6. Find the product with a row id of 10
+Answer: db.products.find({id: "10"})
+
+7. Find only the product name and product material
+Answer: db.products.find({}, {product_name: 1, product_price: 1, _id:0})
+
+8. Find all products which contain the value of soft in product material 
+Answer: db.products.find({product_material: "Soft"})
+
+9. Find products which contain product color indigo  and product price 492.00
+Answer: db.products.find( { $or: [ { product_color: 'indigo'  }, { product_price: 492 } ] } )
+
+10. Delete the products which product price value are same
+Answer: db.mycollection.aggregate(
+    { $group: { 
+        // Group by fields to match on (a,b)
+        _id: { a: "$a", b: "$b" },
+
+        // Count number of matching docs for the group
+        count: { $sum:  1 },
+
+        // Save the _id for matching docs
+        docs: { $push: "$_id" }
+    }},
+
+    // Limit results to duplicates (more than 1 match) 
+    { $match: {
+        count: { $gt : 1 }
+    }}
+)
